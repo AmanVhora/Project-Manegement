@@ -1,0 +1,10 @@
+<div class="container w-50">
+  <h1>Welcome to Project Management Website.</h1>
+
+  <%= image_tag current_user.profile_image, size: '200x200', class: "rounded-circle" %>
+
+  <div>
+    <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "btn btn-danger rounded-1 mt-3" %>
+    <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-warning rounded-1 mt-3 ms-3" %>
+  </div>
+</div>
