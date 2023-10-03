@@ -51,6 +51,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "pry"
 end
 
 group :development do
@@ -84,5 +85,7 @@ gem "omniauth-facebook", "~> 9.0"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 
 gem "omniauth-google-oauth2", "~> 1.1"
+
+gem "react-rails", "~> 3.1"
 
 gem "activestorage", "~> 7.0"

@@ -1,0 +1,6 @@
+<h2>
+  <%= react_component('Username', { name: @user_name }, {prerender: true}) %>
+  Welcome to Project Management Website.
+</h2>
+
+<%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "btn btn-danger rounded-1 mt-3" %>
