@@ -287,6 +287,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activestorage (~> 7.0)
   bootsnap
   bootstrap (~> 5.3.1)
   capybara
