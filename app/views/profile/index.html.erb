@@ -1,0 +1,26 @@
+<div class="container w-50 border rounded-1">
+  <h1 class="text-center">Welcome to Project Management Website.</h1> 
+  <div class="row p-3 pe-5">
+    <div class="col-5">
+      <%= image_tag current_user.profile_image, class: "img-fluid rounded-4", size: "200x200", if: current_user.profile_image.attached? %>
+    </div>
+
+    <div class="col-7">
+      <div class="row">
+        <p class="col-3 mt-1">Username</p>
+        <p class="border rounded-1 p-1 ps-2 col-9"><%= current_user.name %></p>
+      </div>
+
+      <div class="row">
+        <p class="col-3 mt-1">Email</p>
+        <p class="border rounded-1 p-1 ps-2 col-9"><%= current_user.email %></p>
+      </div>
+
+      <div class="row ms-0 mt-2">
+        <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "btn btn-danger rounded-1 col-3" %>
+        <div class="col-1"></div>
+        <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-warning rounded-1 col-3" %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -87,3 +87,5 @@ gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem "omniauth-google-oauth2", "~> 1.1"
 
 gem "react-rails", "~> 3.1"
+
+gem "activestorage", "~> 7.0"
